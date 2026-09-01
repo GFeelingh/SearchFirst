@@ -96,8 +96,15 @@ Web 版打开网站首页时会首先显示“你原本想搜什么？”，搜�
 - SearchFirst 不是广告拦截器、推荐算法修改器或网站内容过滤器。
 - 它的目标只是保护用户进入平台时原本的搜索意图。
 
-## 5. iOS 快捷指令
+## 5. iOS 快捷指令与源码
 
-iOS 版通过官方 iCloud 链接提供，不需要下载 GitHub 文件或自行签名：
+普通用户不需要下载源码或自行签名，推荐直接通过官方 iCloud 链接添加：
 
 **[获取「先搜，再刷。」快捷指令](https://www.icloud.com/shortcuts/4c8ebdc22d734be3b5cb0b663086d516)**
+
+项目同时保留 iOS v1.0 的未签名快捷指令源码和 Mac 签名脚本，供开发者查看、修改或自行部署：
+
+- [`SouBa-iOS-v1.0-unsigned.shortcut`](./releases/SouBa-iOS-v1.0-unsigned.shortcut)
+- [`Sign-SouBa-iOS-v1.0.command`](./releases/Sign-SouBa-iOS-v1.0.command)
+
+未签名 `.shortcut` 文件不能直接作为最终分享文件导入；自行部署时需在 Mac 上使用 `shortcuts sign --mode anyone` 签名。
